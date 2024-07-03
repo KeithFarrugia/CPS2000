@@ -1,0 +1,10 @@
+fun inc_array (x : int[8]) -> bool{
+    for(let i:int = 0; i < 8; i = i+1){
+        x[i] = i;
+        __print x[i];
+    }
+    return true;
+}
+
+let list_of_integers : int[8] = [0];
+let result:bool = inc_array(list_of_integers);

@@ -1,0 +1,54 @@
+if(true){
+
+    let x : int = dosomthing(1,2); 
+    l = x+1;
+    __print l as colour;
+
+} else {
+
+    __delay z; 
+    __write x,y,z ;
+    __write_box 1,2,3,4,5;
+
+}
+
+for( let i : int = 0; i < 10; i = i + 1){
+    __print i;
+}
+
+while(true){
+    variable = 25;
+}
+
+
+
+
+let x : int = 5 * __width;
+
+for(;true;){
+    __print true;
+}
+
+if(true){
+
+}else{
+    
+}
+
+fun helloWorld() -> colour {
+    __print hehe;
+}
+
+fun helloWorld2(x:int[10], y:float ) -> colour[2] {
+    __print hehe;
+}
+
+let array1:int[] = [1,2,3,4,5,6,7,8,9];
+
+let array2:int[10] = [1];
+
+array1[2] = array2[1];
+
+
+
+let variable:int = 5*1;

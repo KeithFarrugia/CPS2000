@@ -1,0 +1,15 @@
+ -> ; , / == =  < <= > >= + - * != ! {[()]}
+
+for while and or not let as if else 
+int float colour bool #FF00FF
+__width __height __random_int __print __delay __write_box __write
+
+//casdakwehq123124^"!&*"!$^
+
+/* comment here 
+//////
+
+for testing 
+*/
+
+123

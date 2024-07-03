@@ -1,0 +1,26 @@
+fun MaxInArray (x : int[8]) -> int[8]{
+    let m: int = 0;
+    for(let i:int = 0; i < 8; i = i+1){
+        if ( x[i] > m) { 
+            m = x [i];
+        }
+        x[i] = x[i]+10;
+    }
+    __print m;
+    return x;
+}
+
+fun printArray (x : int[8]) -> int{
+    for(let i:int = 0; i < 8; i = i+1){
+        __print x[i];
+    }
+    return 0;
+}
+
+let list_of_integers : int[] = [213, 45, 3, 6, 5, 67, 90, 8];
+
+let list_of_integers2 : int[8] = [1];
+
+list_of_integers2 = MaxInArray ( list_of_integers );
+
+let val:int = printArray(list_of_integers2);

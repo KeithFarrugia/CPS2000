@@ -1,0 +1,34 @@
+fun Race (p1_c : colour , p2_c : colour , score_max : int ) -> int {
+    let p1_score : int = 0;
+    let p2_score : int = 0;
+    
+    while ( (p1_score < score_max) and ( p2_score < score_max )) {
+
+        let p1_toss : int = __random_int 1000;
+        let p2_toss : int = __random_int 1000;
+        
+        if ( p1_toss > p2_toss ) {
+            p1_score = p1_score + 1 ;
+            __write 1 , p1_score , p1_c;
+        } else {
+            p2_score = p2_score + 1 ;
+            __write 2 , p2_score , p2_c;
+        }
+
+        __delay 100;
+    }
+
+    if ( p2_score > p1_score ) {
+        return 2;
+    }
+
+    return 1;
+}
+
+__clear #00AAAA;
+
+let c1 : colour = #00ff00;
+let c2 : colour = #0000ff;
+let m: int = __height;
+let w: int = Race (c1 , c2 , m);
+__print w;

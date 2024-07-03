@@ -1,0 +1,47 @@
+let c : colour = 0 as colour ;
+fun bob () ->bool{
+    return true;
+}
+for ( let i : int = 0; i<64 ; i = i + 1) {
+    c = ( __random_int 1677216) as colour ;
+    __clear c ;
+    __delay 16 ;
+}
+
+
+fun MoreThan50 (x : int ) -> bool {
+    //let x : int = 23 ; // syntax ok , but t h is should not be allowed ! !
+    if ( x <= 50) {
+        return false ;
+    }
+    
+    return true ;
+}
+
+
+fun max (x:int[3]) -> float[3]{
+    return x;
+}
+
+
+let x:int = 23;
+let y:float = 23;
+
+let z:float = y+x;
+
+let array1:float[]  = [1,2,3,4,5,6,7,8,9];
+let array2:int[]    = [1,2,3,4,5,6,7,8,9];
+let array3:int[3]   = [1];
+let array4:float[3] = [1.0];
+
+y = z;
+
+
+let q:bool = MoreThan50(x);
+array4 = max(array3);
+
+
+array2[1] = 1;
+
+array1[1] = array2[1];
+array1 = array2;
